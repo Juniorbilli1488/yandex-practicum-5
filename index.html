@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Mesto Russia</title>
+</head>
+<body class="page">
+  <header class="container header__container">
+    <a href="#" class="header__link">
+      <img src="svg/logo.svg" alt="логотип место" class="header__link-img">
+    </a>
+  </header>
+  <main class="content">
+    <section class="container profile__container">
+      <div class="profile__main_content">
+        <img src="image/avatar.jpg" alt="аватарка профиля" class="profile_avatar">
+        <div class="profile__text_content">
+          <h1 class="profile_title"></h1>         
+          <p class="profile_subtitle"></p>
+        </div>
+        <button type="button" class="edit__button">
+          <img src="svg/Vector (1).svg" alt="">
+        </button>
+      </div>
+      <button type="button" class="add__button"></button>     
+    </section>
+    <section class="container elemenets__container">
+      <template class="template__card">
+        <article class="element__item">
+          <div class="wrapper__main-img">
+            <img src="" alt="" class="element__main_img">
+            <button class="button__delete">
+              <img src="./svg/Group.svg" alt=""></div>          
+          </button>
+          <div class="element__content">
+            <h2 class="element__content_title"></h2>
+            <button type="button" class="like__button">
+              <img src="svg/Vector.svg" alt="кнопка лайка" class="element__content_button-img">
+            </button>
+          </div>
+        </article>
+      </template>
+    </section>
+  </main>
+  <footer class="container footer__container">
+    <p class="footer__content">&copy; 2025 Mesto Russia</p>
+  </footer>
+  <div class="pop-up pop-up__content-user">
+    <div class="pop-up__wrapper">
+      <h2 class="pop-up__title">Редактировать профиль</h2>
+      <button type="button" class="close__button close__button-profile">
+        <img src="svg/Close Icon.svg" alt="" class="close__button_img">
+      </button>
+      <form action="" class="pop-up_form">
+        <input class="input pop-up__input_name" type="text" placeholder="Имя">
+        <input class="input pop-up__input_description" type="text" placeholder="О себе">
+        <button type="button" class="submit__button button_safe">Сохранить</button>
+      </form>
+    </div>
+  </div>
+  <div class="pop-upp pop-up__content-card">
+    <div class="pop-up__wrapper">
+      <h2 class="pop-up__title">Новое место</h2>
+      <button type="button" class="close__button close__button-card">
+        <img src="svg/Close Icon.svg" alt="" class="close__button_img">
+      </button>
+      <form action="" class="pop-up_form">
+        <input class="input pop-up__input_name-card" type="text" placeholder="Название">
+        <input class="input pop-up__input_link-card" type="text" placeholder="Ссылка на картинку">
+        <button type="button" class="submit__button button_create">Создать</button>
+      </form>
+    </div>
+  </div>
+  <template class="template-card-image">
+    <figure id="template-figure">
+      <div class="wrapper__for-button">
+        <button class="close__button-image">
+          <img src="svg/Close Icon.svg" alt="close__button_img">
+        </button>
+        <img src="" alt="" class="fig__image">
+        <figcaption class="fig__description"></figcaption>
+      </div>     
+    </figure>
+  </template>
+  <script src="script.js"></script>
+</body>
+</html>
